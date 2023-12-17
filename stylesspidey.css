@@ -1,0 +1,25 @@
+/* about section image css */
+.imageAboutPage {
+    width: 100%;
+}
+body{
+    display:grid;
+    place-items:center;
+    margin: 0;
+    padding: 0 24px;
+    background-image: url("spidermanback.jpg");
+    background-size:cover;
+}
+.spidey{
+    color:white;
+    font-size:40px;
+    text-align:center;
+}
+.card{
+    box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+    max-width: 450px;
+    margin-right: auto;
+    text-align:center;
+    font-family:arial;
+    padding: top 10px;
+}

@@ -1,0 +1,52 @@
+.header0 {
+    padding: 60px;
+    text-align: center;
+    background-image: url("spidermanheader2.jpg");
+    color: white;
+    font-size: 30px;
+    text-shadow: 2px 2px 4px #000000;
+    border-radius: 120px;
+  }
+  .header1 {
+    padding: 8px;
+    text-align: center;
+    background: rgb(228, 63, 63);
+    color: white;
+    font-size: 10px;
+    text-shadow: 2px 2px 4px #000000;
+    border-radius: 120px;
+  }
+  .header2 {
+    padding: 8px;
+    text-align: center;
+    background: rgb(228, 63, 63);
+    color: white;
+    font-size: 15px;
+    text-shadow: 2px 2px 4px #000000;
+    border-radius: 100px;
+  }
+  .content {padding:20px;}
+
+  body{
+    background-image: url("spidermancomic.jpg");
+    text-align:center;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+  img {
+    max-width: 150%;
+    height: 350px;
+    border-radius: 30%;
+  }
+  .image {
+    flex-basis: 100%;
+    order: 2;
+  }
+  .text {
+    color: #CD5C5C;
+    padding-right: 20px;
+    font: italic 10px "Fira Sans", serif;
+  }

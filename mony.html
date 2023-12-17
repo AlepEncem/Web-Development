@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Currency Converter</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        
+        <div class="col l6 m6 s6">
+    
+        </div>
+        <div class="col l5 m6 s12 ">
+          
+          <div class="card-panel z-depth-4">
+            
+               <form>
+                 <t><h4>Currency Converter</h4></t>
+            <label for="colFormLabelSm">USD</label>
+            <input type="number" id="forex-amount" placeholder="Enter Amount">
+            <br> <br>
+            <label for="colFormLabelSm">USD</label>
+            <select id="forex-rate" name="rate">
+               <option disabled value="select" selected>select currency</option>
+                 <option value="4.47">USD</option>
+            </select>
+          <br> <br>
+            <label for="colFormLabelSm">MYR</label>
+            <input type="text" placeholder="Amount In UGX" id="forex-ugx">
+
+          </form>
+            
+            
+          </div>
+          
+          
+        </div>
+
+      </div>
+      
+    </div>
+
+  
+  
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     
+  <script>
+ document.addEventListener('DOMContentLoaded', function() {
+    
+    document.getElementById("forex-amount").addEventListener("input",calculator);
+    document.getElementById("forex-rate").addEventListener("change",ChangeCurreny);
+  
+    function calculator(){
+         let amount = document.getElementById("forex-amount").value;
+         let rate = document.getElementById("forex-rate").value;
+         
+      if(rate == "select"){
+             document.getElementById("forex-ugx").setAttribute("placeholder","please select currency");
+      }else{
+         let compute = amount * rate;
+         
+        document.getElementById("forex-ugx").value = compute;
+      }
+    }
+    
+    function ChangeCurreny(){
+      let rate = document.getElementById("forex-rate").value;
+      let amount = document.getElementById("forex-amount").value;
+      
+   
+      let compute = rate * amount;
+        document.getElementById("forex-ugx").value = compute.toFixed(2);
+        
+      
+    }
+    
+    
+
+    let menu = document.querySelectorAll('select');
+     M.FormSelect.init(menu,{});
+     
+  });
+  </script>
+  
+  </body>
+</html>

@@ -1,0 +1,72 @@
+
+        .title{
+            color:grey;
+            font-size:50px;
+            text-align:center;
+        }
+        .university{
+            color:grey;
+            font-size:20px;
+            text-align:center;
+        }
+       .name{
+            color:grey;
+            font-size:20px;
+            text-align:center;
+       }
+        .card{
+            box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
+            max-width: 450px;
+            margin: auto;
+            text-align:center;
+            font-family:arial;
+            padding: top 10px;
+        }
+
+        .button {
+         border:none;
+         outline:0;
+         display: inline-block;
+         padding: 8px 0;
+         color: rgb(255, 255, 255);
+         background-color: rgb(54, 175, 43);
+         text-align:center;
+         cursor:pointer;
+         width:100%;
+         font-size: 18px;
+         text-decoration:none;
+        }
+
+        .button:hover {background-color: #3e8e41}
+
+        .button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+        }
+        .social-icon{
+            color:grey;
+            transition:color 0.2s;
+            text-decoration:none;
+            margin: 5px;
+            font-size:21px;
+            
+        }
+        .social-icon:hover{
+            color:#333333;
+        }
+        .clickFunction{
+         border:none;
+         outline:0;
+         display: inline-block;
+         padding: 8px 0;
+         color: rgb(255, 255, 255);
+         background-color: rgb(54, 175, 43);
+         text-align:center;
+         cursor:pointer;
+         width:100%;
+         font-size: 18px;
+         text-decoration:none;
+
+        }
+      

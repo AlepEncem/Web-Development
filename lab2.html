@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="page.php" method="post">
+  <label for="name">Your name:</label><br>
+  <input type="text" id="name" name="name"><br><br>
+  <label for="email">Your e-mail:</label><br>
+  <input type="text" id="email" name="email" ><br>
+  <br>Message<br>
+  <textarea name="message" rows="10" cols="30"></textarea>
+  <br><br>
+  <input type="submit" value="Submit">
+  <input type="button" value="Clear">
+
+<br><br>Additional options: <br>
+ <input type="checkbox" id="country1" name="country1" value="USA">
+ <label for="USA">USA</label><br>
+  <input type="checkbox" id="country2" name="country2" value="Canada">
+  <label for="Canada"> Canada</label><br>
+  <input type="checkbox" id="country3" name="country3" value="Mexico">
+  <label for="Mexico"> Mexico</label><br>
+  
+  <br>Do you agree? 
+  <input type="radio" id="yes" name="choice" value="Yes">
+  <label for="yes">Yes</label>
+  <input type="radio" id="no" name="choice" value="No">
+  <label for="no">No</label><br>
+  
+    <br><label for="language">Select an item from the dropdown :</label>
+  <select id="language" name="language">
+    <option value="PHP">PHP</option>
+    <option value="HTML">HTML</option>
+    <option value="JS">JS</option>
+    <option value="CSS">CSS</option>
+  </select>
+  <br><br>
+  
+  </form> 
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html> <!--All HTML documents must start with a <!DOCTYPE> declaration.
+                    The declaration is not an HTML tag. It is an "information" to the browser about what document type to expect.
+                    In HTML 5, the declaration is <simple-->
+
+<html lang="en"> <!--The <html lang=”en’> only specifies the language code of 
+                     the page meaning en or English is used for all the text on the page.-->
+
+<head> <!--In an HTML file, the html head is the first section in the code containing information
+           about a web page's properties and links to external related files. For example, in the HTML head,
+            you can have the title of the page, meta tags, CSS code, Open Graph tags, and JavaScript code.-->
+
+    <title>Myprofilecard</title> 
+    <link rel="stylesheet" href="style1.css"> <!--To link html file with css to decorate ur website-->
+
+    
+</head>
+
+<body>
+    <div class="card"> <!--Disini div menunjukkan division atau divisi atau 
+                           bagian yang merupakan generic blok konten yang dapat digunakan sebagai 
+                           penampung untuk mengelompokkan beberapa elemen menjadi satu.
+
+                           Elemen Div pada HTML dapat dijadikan sebagai wadah untuk menempatkan beberapa 
+                           elemen menjadi satu bagian, yang penggunaannya ditujukan untuk mempermudah aplikasi 
+                           gaya dengan CSS dan perlakukan khusus lainnya yang kemudian dapat diberi atribut Class, 
+                           ID, Title, dan lain sebagainya.-->
+
+
+        <h1 style="color:grey"class="title">Student Profile Card</h1>
+        <img src="profile.png"alt="profile-picture"width="200" height="200">
+        <h1 style="color:grey"class="name">Qairel Qayyum Bin Muhamad Ridhuan</h1>
+        <h1 style="color:grey"class="university">UTHM PAGOH</h1>
+        <p style="color:rgb(0, 109, 128)">Software Engineer & Website Developer</p> 
+       
+        <a class="social-icon" href="https://twitter.com/qairelridhuan" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>  
+        </a>
+
+        <a class="social-icon" href="https://instagram.com/qairelridhuan" target="_blank">
+            <ion-icon name="logo-instagram"></ion-icon>  
+        </a>
+     
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <div id="hi">hye</div>
+        <p><button onClick="clickFunction()">Hire me</button></p>
+      <script>
+          function clickFunction(){
+              let i = document.getElementById("hi");
+              if (i.innerHTML == "hye"){
+                  i.innerHTML = "sir"
+              }else if (i.innerHTML == "sir"){
+                  i.innerHTML= "hire me"
+              }
+          }
+      </script>
+            <a href=""class="button">Contact Me</a>
+<html>

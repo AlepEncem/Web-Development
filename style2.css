@@ -1,0 +1,79 @@
+
+.input{ /*style all input fields*/
+    width: 100%;
+    padding:12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom:16px;
+}
+.input[type=submit]{ /*style the submit button*/
+    background-color:#00FF00;
+    color: black;
+}
+.container{ /*style the container for inputs*/
+    background-color:#f1f1f177;
+    padding:20px;
+}
+#message{
+    display:none;
+    background: #f1f1f1;
+    color: #000;
+    position:relative;
+    padding: 20px;
+    margin-top:10px;
+}
+#message p{
+    padding:10px 35px;
+    font-size:18px;
+}
+.valid{
+    color:green;
+}
+.valid:before{
+    position:relative;
+    left: -35px;
+    content:"/"
+}
+.invalid:before{
+    position:relative;
+    left:-35px;
+    content: "x";
+}
+.title{
+    color:grey;
+    font-size:50px;
+    text-align:center;
+}
+.description{
+    color:grey;
+    font-size:20px;
+    text-align:center;
+}
+img{
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+}
+h3{
+    text-align:center;
+    text-transform:uppercase;
+    color: grey;
+    font-size:100;
+    
+}
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #36f4eb;
+  }
+  h4{
+    text-align:center;
+    text-transform:uppercase;
+    color: grey;
+    font-size:100;
+  }
+  .button:hover {
+    opacity: 0.8;
+  }
